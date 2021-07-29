@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Arial';
+    src: url(../fonts/arial.ttf);
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.container {
+    width: 80%;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #2056ac;
+    padding-top: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.fa-cog {
+    font-size: 2rem;
+}
+
+#brand-name {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0.5rem 0 2rem !important;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.nav-item:hover {
+    background-color: #fff;
+    color: #2056ac;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* MAIN */
+
+.banner {
+    padding: 1rem 0;
+}
+
+.banner-img-bg {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-info {
+    text-align: center;
+}
+
+.intro-info h1 {
+    font-size: 40px;
+}
+
+.intro-info a {
+    text-decoration: underline;
+    color: #2056ac;
+}
+
+.contact {
+    background-color: #EFEFE5;
+    padding: 3rem 0;
+}
+
+.contact-info {
+    color: #60615C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+}
+
+.contact-info-item-icon {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #2056ac;
+    padding: 3rem 0;
+    text-align: center;
+    color: #dfdfdf;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-social-link {
+    margin-top: 1rem;
+}
+
+.footer-social-link-item {
+    position: relative;
+    font-size: 40px;
+    color: #4C93B9;
+    border-radius: 0;
+    z-index: 999;
+    margin: 5px;
+    /* background-color: #fff; */
+}
+
+.footer-social-link-item::after {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 30px;
+    height: 33px;
+    left: 5px;
+    top: 5px;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .nav-item {
+        padding: 1rem 0;
+    }
+    .contact-info-item {
+        width: 90%;
+        margin: 2rem 0;
+    }
+}
