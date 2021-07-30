@@ -6,9 +6,14 @@
 }
 
 *,
- ::before,
- ::after {
+::before,
+::after {
     box-sizing: border-box;
+    font-family: "Arial";
+}
+
+.fontawesome {
+    font-family: "Font Awesome 5 Free" !important;
 }
 
 ul {
@@ -26,7 +31,7 @@ a {
 }
 
 .container {
-    width: 80%;
+    max-width: 80%;
     padding: 15px 0;
     margin: 0 auto;
 }
@@ -170,19 +175,19 @@ footer a {
 
 @media screen and (min-width: 1440px) {
     .container {
-        width: 70%;
+        max-width: 60%;
     }
 }
 
 @media screen and (max-width: 992px) {
     .container {
-        width: 80%;
+        max-width: 80%;
     }
 }
 
 @media screen and (max-width: 576px) {
     .container {
-        width: 90%;
+        max-width: 90%;
     }
     .contact-info-item {
         width: 90%;
@@ -193,5 +198,11 @@ footer a {
     }
     .intro-info p {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav-item {
+        padding: 1rem 0.5rem;
     }
 }
