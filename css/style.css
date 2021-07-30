@@ -9,11 +9,12 @@
 ::before,
 ::after {
     box-sizing: border-box;
-    font-family: "Arial";
 }
 
-.fontawesome {
-    font-family: "Font Awesome 5 Free" !important;
+header,
+body,
+footer {
+    font-family: "Arial";
 }
 
 ul {
