@@ -188,4 +188,10 @@ footer a {
         width: 90%;
         margin: 2rem 0;
     }
+    .intro-info h1 {
+        font-size: 33px;
+    }
+    .intro-info p {
+        font-size: 20px;
+    }
 }
