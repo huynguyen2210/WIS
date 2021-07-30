@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+    padding-inline-start: 0 !important;
+}
+
 body {
     margin: 0;
 }
@@ -56,7 +61,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem auto 0;
 }
 
 .nav-item {
@@ -159,7 +165,7 @@ footer a {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: -1;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -177,9 +183,6 @@ footer a {
 @media screen and (max-width: 576px) {
     .container {
         width: 90%;
-    }
-    .nav-item {
-        padding: 1rem 0;
     }
     .contact-info-item {
         width: 90%;
