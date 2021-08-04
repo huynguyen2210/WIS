@@ -627,6 +627,14 @@ footer h1 {
     margin-right: 5px;
 }
 
+.contact-info-social-link a:hover {
+    background-color: #fff;
+}
+
+.contact-info-social-link a:hover i {
+    color: #FFBB00;
+}
+
 .contact-info-social-link i {
     color: #fff;
     position: absolute;
